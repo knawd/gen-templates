@@ -1,0 +1,20 @@
+[template]
+sub_templates = ["http", "cloudevents"]
+
+[placeholders.generate_service_definition]
+type = "bool"
+prompt = "Want to create a knative service definition?"
+default = true
+
+[conditional.'generate_service_definition == false']
+ignore = [ "service.yaml" ]
+
+[placeholders.container_reg]
+type = "string"
+prompt = "What container registry would you like to use?"
+default = "NOT_KNOWN"
+
+[placeholders.container_repo]
+type = "string"
+prompt = "What container repository would you like to use?"
+default = "NOT_KNOWN"
