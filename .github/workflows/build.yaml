@@ -20,7 +20,7 @@ jobs:
       CARGO_GENERATE_VALUE_GENERATE_SERVICE_DEFINITION: true
     steps:
       - uses: actions/checkout@v3
-      - uses: cargo-generate/cargo-generate-action@v0.17
+      - uses: cargo-generate/cargo-generate-action@v0.17.5
         with:
           name: ${{ env.PROJECT_NAME }}
           subfolder: http
