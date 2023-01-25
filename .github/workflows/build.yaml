@@ -33,4 +33,5 @@ jobs:
       - run: |
           mv $PROJECT_NAME ${{ runner.temp }}/
           cd ${{ runner.temp }}/$PROJECT_NAME
+          rustup target add wasm32-wasi
           cargo check
