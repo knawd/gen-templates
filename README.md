@@ -1,6 +1,8 @@
 # gen-templates
 Templates for building WASI services in Knative and WASMEdge.
 
+[![Build Template](https://github.com/knawd/gen-templates/actions/workflows/build.yaml/badge.svg)](https://github.com/knawd/gen-templates/actions/workflows/build.yaml)
+
 ## usage
 
 1. Install `cargo generate`
