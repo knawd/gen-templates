@@ -67,21 +67,21 @@ curl -v -d '{"name": "Bootsy"}' \
 ## build
 
 ```
-docker build -t {{container_reg}}/{{container_repo}}/{{project-name}} .
+docker build -t {{container_reg}}/{{container_org}}/{{project-name}} .
 ```
 or
 ```
-podman build -t {{container_reg}}/{{container_repo}}/{{project-name}} .
+podman build -t {{container_reg}}/{{container_org}}/{{project-name}} .
 ```
 
 ## push
 
 ```
-docker push {{container_reg}}/{{container_repo}}/{{project-name}}
+docker push {{container_reg}}/{{container_org}}/{{project-name}}
 ```
 or
 ```
-podman push {{container_reg}}/{{container_repo}}/{{project-name}}
+podman push {{container_reg}}/{{container_org}}/{{project-name}}
 ```
 
 ## deploy

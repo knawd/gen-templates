@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PROJECT_NAME: mytemplate
-      CARGO_GENERATE_VALUE_CONTAINER_REPO: knawd
+      CARGO_GENERATE_VALUE_CONTAINER_ORG: knawd
       CARGO_GENERATE_VALUE_CONTAINER_REG: quay.io
       CARGO_GENERATE_VALUE_GENERATE_SERVICE_DEFINITION: true
     steps:
