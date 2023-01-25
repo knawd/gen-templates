@@ -13,8 +13,8 @@ In case you need to configure some resources for your function, you can do that 
 The app will expose three endpoints:
 
   * `/` Triggers the `index` function, for either GET or POST methods
-  * `/health/readiness` The endpoint for a readiness health check **Not Available**
-  * `/health/liveness` The endpoint for a liveness health check **Not Available**
+  * `/health/readiness` The endpoint for a readiness health check
+  * `/health/liveness` The endpoint for a liveness health check
 
 ## Development
 
