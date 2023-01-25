@@ -12,7 +12,7 @@ cargo install generate
 
 1. Generate a project
 ```
-cargo gen gh:knawd/gen-templates
+cargo generate gh:knawd/gen-templates
 ```
 
 1. Follow the instructions in the README.md in the generated project.
