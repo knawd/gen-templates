@@ -10,11 +10,11 @@ Templates for building WASI services in Knative and WASMEdge.
 cargo install generate
 ```
 
-1. Generate a project
+2. Generate a project
 ```
 cargo generate gh:knawd/gen-templates
 ```
 
-1. Follow the instructions in the README.md in the generated project.
+3. Follow the instructions in the README.md in the generated project.
 
 Have Fun!
