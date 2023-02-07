@@ -1,0 +1,18 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: {{project-name}}
+spec:
+  template:
+    metadata:
+      annotations:
+        module.wasm.image/variant: compat-smart
+    spec:
+      runtimeClassName: crun
+      timeoutSeconds: 1
+      containers:
+      - name: http-server
+        image:  {{container_reg}}/{{container_org}}/{{project-name}}
+        ports:
+        - containerPort: 8080
+          protocol: TCP

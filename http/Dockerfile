@@ -1,6 +1,4 @@
-FROM rust:1.66.0 as builder
-
-RUN rustup target add wasm32-wasi
+FROM quay.io/knawd/rust-base:1.67.0 as builder
 
 # Copy local code to the container image.
 WORKDIR /usr/src/app
@@ -8,6 +6,8 @@ COPY . .
 
 # Install production dependencies and build a release artifact.
 RUN cargo build --release --target wasm32-wasi
+
+RUN wasmedgec target/wasm32-wasi/release/{{project-name}}.wasm {{project-name}}.wasm
 
 FROM scratch
 
