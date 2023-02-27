@@ -86,4 +86,8 @@ oc apply -f service.yaml
 ```
 For OpenShift you may want to consider using the knative service build!
 
+## Notes
+
+* `ci.Dockerfile` is available to integrate this into a CI/CD system.
+
 Have fun!
