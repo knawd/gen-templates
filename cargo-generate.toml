@@ -12,9 +12,9 @@ ignore = [ "service.yaml" ]
 [placeholders.container_reg]
 type = "string"
 prompt = "Which container registry would you like to use?"
-default = "NOT_KNOWN"
+default = "quay.io"
 
 [placeholders.container_org]
 type = "string"
 prompt = "Which container organisation would you like to use?"
-default = "NOT_KNOWN"
+default = "knawd"
